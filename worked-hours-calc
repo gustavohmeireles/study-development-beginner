@@ -1,0 +1,36 @@
+inicio
+
+alfanumerico codigo_operario
+real horas_operario
+real e
+real salario
+real salario_excedente
+real = salario_total
+  mostrar "Digite o código do operario"
+		receber codigo_operario
+	mostrar "Digite o número de horas trabalhadas do operario"
+		receber horas_operario
+	se horas_operario > 50 entao
+		mostrar "o trabalhador possui horas extras"
+		calcular (horas_operario - 50)
+			receber e
+		calcular salario = (horas_operario * 10)
+ 		calcular salario_excedente = (e * 20)
+		calcular salario_total = (salario + salario_excedente)
+		mostrar codigo_operario
+		mostrar "Salario total" salario_total
+		mostrar "Salario base" salario
+		mostrar "Salario extra" salario_excedente
+	se horas_operario > 0 && <= 50 entao
+	mostrar codigo_operario
+	mostrar "o trabalhador não possui horas extras"
+	e = 0
+	salario_excedente = 0
+	calcular salario = (horas_operario * 10)
+	mostrar "Salario base" salario
+	senao
+	mostrar "Digite valor positivo"
+	
+	retorno 0
+
+sair
