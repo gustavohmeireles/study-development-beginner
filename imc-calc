@@ -1,0 +1,25 @@
+inicio
+
+real peso
+real altura
+real imc
+	mostrar "digite peso em quilos"
+		receber peso
+	mostrar "digite altura em metros"
+		receber altura
+	calcular imc = (peso / altura ** 2);
+		se imc <16 entao
+			mostrar "subpeso severo"
+		se imc >= 16 && <19.99 entao
+			mostrar "subpeso"
+		se imc >= 19.99 && <24.9 entao
+			mostrar "normal"
+		se imc >= 24.9 && <29.99 entao
+			mostrar "sobrepeso"
+		se imc >= 29.99 && <39.9 entao
+			mostrar "obeso"
+		se imc >= 39.9 entao
+			mostrar "obeso morbido"
+	retorno 0;
+	
+sair
