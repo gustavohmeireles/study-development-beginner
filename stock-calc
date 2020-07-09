@@ -1,0 +1,15 @@
+inicio
+
+inteiro quantidade_minima
+inteiro quantidade_maxima
+inteiro estoque_medio
+	mostrar "Digite a quantidade minima de peças"
+		receber quantidade_minima
+	mostrar "Digite a quantidade maxima de peças"
+		receber quantidade_maxima
+	calcular estoque_medio = (quantidade_minima + quantidade_maxima) / 2
+		mostrar estoque_medio
+	
+  retorno 0;
+
+sair
